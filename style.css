@@ -274,9 +274,18 @@ body {
   animation: fadeUp 1s 0.65s var(--ease-out) forwards;
 }
 
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.9s var(--ease-out) forwards;
+}
+
 .btn-hero {
   display: inline-block;
-  margin-top: 0.6rem;
   padding: 0.9rem 2.6rem;
   font-family: var(--sans);
   font-size: 0.78rem;
@@ -289,11 +298,31 @@ body {
   border-radius: var(--radius);
   border: 2px solid transparent;
   transition: background 0.28s, color 0.28s, border-color 0.28s, transform 0.28s;
-  opacity: 0;
-  animation: fadeUp 1s 0.9s var(--ease-out) forwards;
 }
 .btn-hero:hover {
   background: transparent;
+  border-color: var(--gold-lt);
+  color: var(--gold-lt);
+  transform: translateY(-2px);
+}
+
+.btn-hero-ghost {
+  display: inline-block;
+  padding: 0.9rem 2.6rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(247,243,236,0.88);
+  background: transparent;
+  text-decoration: none;
+  border-radius: var(--radius);
+  border: 2px solid rgba(247,243,236,0.4);
+  transition: background 0.28s, color 0.28s, border-color 0.28s, transform 0.28s;
+}
+.btn-hero-ghost:hover {
+  background: rgba(247,243,236,0.1);
   border-color: var(--gold-lt);
   color: var(--gold-lt);
   transform: translateY(-2px);

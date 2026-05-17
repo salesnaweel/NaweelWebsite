@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalogue — Naweel Global</title>
+  <meta name="description" content="Explore Naweel Global's catalogue of authentic Indonesian artisan products — batik fabrics, carved wood, rattan weaves, embroidery, ceramics, silver jewellery, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="catalogue.css" />
+</head>
+<body class="cat-page">
+
+  <!-- ─────────────── NAV ─────────────── -->
+  <nav id="navbar" class="scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <span class="logo-text">Naweel<span class="logo-dot">·</span>Global</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html#vision"    class="nav-link">Vision</a></li>
+        <li><a href="index.html#mission"   class="nav-link">Mission</a></li>
+        <li><a href="index.html#why-us"    class="nav-link">Why Us</a></li>
+        <li><a href="index.html#our-story" class="nav-link">Our Story</a></li>
+        <li><a href="catalogue.html"       class="nav-link nav-link--active">Catalogue</a></li>
+        <li><a href="index.html#contact"   class="nav-link nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─────────────── PAGE HERO BANNER ─────────────── -->
+  <header class="cat-hero" aria-label="Catalogue header">
+    <div class="cat-hero-overlay"></div>
+    <div class="cat-hero-content">
+      <p class="cat-hero-eyebrow">Naweel Global</p>
+      <h1 class="cat-hero-title">Our <em>Catalogue</em></h1>
+      <p class="cat-hero-sub">Handcrafted with soul — each piece tells a story of Indonesian heritage</p>
+    </div>
+  </header>
+
+  <!-- ─────────────── CATALOGUE BODY ─────────────── -->
+  <main id="catalogue-main" class="cat-main">
+    <div class="container">
+
+      <!-- TOOLBAR: search + filters -->
+      <div class="cat-toolbar" aria-label="Product filters">
+
+        <!-- Search -->
+        <div class="cat-search-wrap">
+          <svg class="cat-search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <input
+            type="search"
+            id="cat-search"
+            class="cat-search"
+            placeholder="Search products…"
+            aria-label="Search products"
+            autocomplete="off"
+          />
+          <button class="cat-search-clear" id="cat-search-clear" aria-label="Clear search" hidden>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+        <!-- Category pills -->
+        <div class="cat-filters" role="group" aria-label="Filter by category">
+          <button class="cat-filter active" data-cat="all"       id="filter-all">All Products</button>
+          <button class="cat-filter" data-cat="textiles"         id="filter-textiles">Textiles</button>
+          <button class="cat-filter" data-cat="woodwork"         id="filter-woodwork">Woodwork</button>
+          <button class="cat-filter" data-cat="weaving"          id="filter-weaving">Weaving</button>
+          <button class="cat-filter" data-cat="ceramics"         id="filter-ceramics">Ceramics</button>
+          <button class="cat-filter" data-cat="jewellery"        id="filter-jewellery">Jewellery</button>
+          <button class="cat-filter" data-cat="home-decor"       id="filter-home-decor">Home Décor</button>
+        </div>
+
+        <!-- Results count -->
+        <p class="cat-count" id="cat-count" aria-live="polite">Showing <strong id="cat-count-num">8</strong> products</p>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="cat-grid" id="cat-grid" role="list">
+
+        <!-- CARD 1: Batik Fabric -->
+        <article class="cat-card reveal" data-cat="textiles" data-name="batik hand-drawn fabric cloth textile" id="card-batik-fabric" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Batik Hand-Drawn Fabric details" data-modal="batik-fabric">
+            <img src="products/batik_fabric.png" alt="Batik Hand-Drawn Fabric" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Textiles</span>
+            <h2 class="cat-card-title">Batik Hand-Drawn Fabric</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Central Java, Indonesia
+            </p>
+            <p class="cat-card-desc">Handmade batik using the traditional <em>tulis</em> technique — each metre takes up to 14 days of skilled hand-work.</p>
+            <button class="cat-card-enquire" data-modal="batik-fabric" id="enquire-batik-fabric">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 2: Carved Wood Sculpture -->
+        <article class="cat-card reveal" data-cat="woodwork" data-name="carved wood sculpture balinese teak statue" id="card-carved-wood" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Balinese Teak Sculpture details" data-modal="carved-wood">
+            <img src="products/carved_wood.png" alt="Balinese Teak Sculpture" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Woodwork</span>
+            <h2 class="cat-card-title">Balinese Teak Sculpture</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Bali, Indonesia
+            </p>
+            <p class="cat-card-desc">Hand-carved from sustainably sourced teak by master craftsmen in Ubud. Each piece is unique — no two are identical.</p>
+            <button class="cat-card-enquire" data-modal="carved-wood" id="enquire-carved-wood">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 3: Rattan Basket -->
+        <article class="cat-card reveal" data-cat="weaving" data-name="rattan basket woven weave natural handwoven" id="card-rattan-basket" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Handwoven Rattan Basket details" data-modal="rattan-basket">
+            <img src="products/rattan_basket.png" alt="Handwoven Rattan Basket" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Weaving</span>
+            <h2 class="cat-card-title">Handwoven Rattan Basket</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              East Kalimantan, Indonesia
+            </p>
+            <p class="cat-card-desc">Tightly woven from natural rattan with zero synthetic materials. Durable, lightweight and 100% biodegradable.</p>
+            <button class="cat-card-enquire" data-modal="rattan-basket" id="enquire-rattan-basket">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 4: Embroidered Textile -->
+        <article class="cat-card reveal" data-cat="textiles" data-name="embroidered silk textile fabric hand-stitched gold thread" id="card-embroidered" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Embroidered Silk Panel details" data-modal="embroidered">
+            <img src="products/embroidered_textile.png" alt="Embroidered Silk Panel" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Textiles</span>
+            <h2 class="cat-card-title">Embroidered Silk Panel</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              West Sumatra, Indonesia
+            </p>
+            <p class="cat-card-desc">Songket-inspired hand-embroidery on pure silk. Gold and green thread woven by artisans preserving the 500-year-old Minangkabau tradition.</p>
+            <button class="cat-card-enquire" data-modal="embroidered" id="enquire-embroidered">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 5: Ceramic Pottery -->
+        <article class="cat-card reveal" data-cat="ceramics" data-name="ceramic pottery terracotta clay vessel handmade painted" id="card-ceramics" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Terracotta Pottery Set details" data-modal="ceramics">
+            <img src="products/ceramic_pottery.png" alt="Terracotta Pottery Set" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Ceramics</span>
+            <h2 class="cat-card-title">Terracotta Pottery Set</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Lombok, Indonesia
+            </p>
+            <p class="cat-card-desc">Wheel-thrown and hand-painted using natural clay from Lombok. Finished with non-toxic mineral glazes in traditional Sasak motifs.</p>
+            <button class="cat-card-enquire" data-modal="ceramics" id="enquire-ceramics">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 6: Silver Jewellery -->
+        <article class="cat-card reveal" data-cat="jewellery" data-name="silver filigree jewellery bracelet earrings jewelry" id="card-silver" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Silver Filigree Jewellery Set details" data-modal="silver">
+            <img src="products/silver_jewelry.png" alt="Silver Filigree Jewellery Set" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Jewellery</span>
+            <h2 class="cat-card-title">Silver Filigree Jewellery Set</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Kendari, Sulawesi
+            </p>
+            <p class="cat-card-desc">925 sterling silver twisted by hand into intricate floral filigree. A centuries-old craft of the Tolaki people, now recognised globally.</p>
+            <button class="cat-card-enquire" data-modal="silver" id="enquire-silver">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 7: Wayang Puppet -->
+        <article class="cat-card reveal" data-cat="home-decor" data-name="wayang puppet shadow leather traditional kulit art decor" id="card-wayang" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Wayang Kulit Shadow Puppet details" data-modal="wayang">
+            <img src="products/wayang_puppet.png" alt="Wayang Kulit Shadow Puppet" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Home Décor</span>
+            <h2 class="cat-card-title">Wayang Kulit Shadow Puppet</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              Yogyakarta, Java
+            </p>
+            <p class="cat-card-desc">Hand-cut buffalo leather puppets hand-painted with natural pigments. UNESCO Intangible Cultural Heritage — a collector's centrepiece.</p>
+            <button class="cat-card-enquire" data-modal="wayang" id="enquire-wayang">Enquire Now</button>
+          </div>
+        </article>
+
+        <!-- CARD 8: Bamboo Lamp -->
+        <article class="cat-card reveal" data-cat="home-decor" data-name="bamboo lamp pendant light woven lighting home" id="card-bamboo-lamp" role="listitem">
+          <button class="cat-card-img-wrap" aria-label="View Bamboo Weave Pendant Lamp details" data-modal="bamboo-lamp">
+            <img src="products/bamboo_lamp.png" alt="Bamboo Weave Pendant Lamp" class="cat-card-img" loading="lazy" />
+            <div class="cat-card-overlay">
+              <span class="cat-card-overlay-text">View Details</span>
+            </div>
+          </button>
+          <div class="cat-card-body">
+            <span class="cat-card-category">Home Décor</span>
+            <h2 class="cat-card-title">Bamboo Weave Pendant Lamp</h2>
+            <p class="cat-card-origin">
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+              West Java, Indonesia
+            </p>
+            <p class="cat-card-desc">Diamond-lattice woven bamboo pendant shade casting warm geometric shadows. Ships flat-packed with E27 fitting — 100% natural materials.</p>
+            <button class="cat-card-enquire" data-modal="bamboo-lamp" id="enquire-bamboo-lamp">Enquire Now</button>
+          </div>
+        </article>
+
+      </div><!-- /cat-grid -->
+
+      <!-- Empty state -->
+      <div class="cat-empty" id="cat-empty" hidden aria-live="polite">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M22 42c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="2" fill="currentColor"/>
+          <circle cx="40" cy="26" r="2" fill="currentColor"/>
+        </svg>
+        <p>No products match your search.</p>
+        <button class="cat-empty-reset" id="cat-empty-reset">Clear filters</button>
+      </div>
+
+      <!-- CTA BANNER -->
+      <div class="cat-cta-banner reveal">
+        <div class="cat-cta-content">
+          <h2 class="cat-cta-title">Don't see what you're looking for?</h2>
+          <p class="cat-cta-text">Our catalogue grows with our artisan network. Reach out — we'll source it for you.</p>
+          <a href="index.html#contact" class="cat-cta-btn" id="cat-cta-contact">Get in Touch</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ─────────────── PRODUCT MODAL ─────────────── -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close product details">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-inner">
+        <div class="modal-img-wrap">
+          <img src="" alt="" id="modal-img" class="modal-img" />
+        </div>
+        <div class="modal-body">
+          <span class="modal-category" id="modal-category"></span>
+          <h2 class="modal-title" id="modal-title"></h2>
+          <p class="modal-origin" id="modal-origin">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14s-5-4.686-5-8a5 5 0 0110 0c0 3.314-5 8-5 8z" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2"/></svg>
+            <span id="modal-origin-text"></span>
+          </p>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-tags" id="modal-tags"></div>
+          <div class="modal-details" id="modal-details"></div>
+          <div class="modal-enquire-wrap">
+            <a class="modal-enquire-btn" id="modal-enquire-btn" href="mailto:salesnaweel@gmail.com">Enquire About This Product</a>
+            <p class="modal-enquire-note">We respond within 1–2 business days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────── FOOTER ─────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-ornament" aria-hidden="true">
+      <img src="artisan_pattern.png" alt="" class="ornament-img ornament-img--footer" />
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text footer-logo">Naweel<span class="logo-dot">·</span>Global</span>
+        <p class="footer-slogan">"Art with soul, Inspired from Indonesia"</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#why-us">Why Us</a>
+        <a href="index.html#our-story">Our Story</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Naweel Global · naweelglobal.com · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="catalogue.js"></script>
+</body>
+</html>
