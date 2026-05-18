@@ -208,7 +208,7 @@ body {
   align-items: center;
   justify-content: center;
   background:
-    url('hero_background.png') center center / cover no-repeat,
+    url('../images/hero_background.png') center center / cover no-repeat,
     var(--green-dk);
   overflow: hidden;
 }
@@ -547,7 +547,7 @@ body {
   position: absolute;
   inset: 0;
   background:
-    url('hero_background.png') center center / cover no-repeat;
+    url('../images/hero_background.png') center center / cover no-repeat;
   opacity: 0.12;
   z-index: 0;
 }

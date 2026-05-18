@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   background:
-    url('hero_background.png') center 40% / cover no-repeat,
+    url('../images/hero_background.png') center 40% / cover no-repeat,
     var(--green-dk);
   overflow: hidden;
   margin-top: 72px; /* navbar height */
